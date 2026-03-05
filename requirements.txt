@@ -1,0 +1,106 @@
+
+#  Core Python Utilities
+matplotlib
+numpy
+pandas
+python-dotenv
+scikit-learn
+typing_extensions
+
+
+#  Deep Learning & NLP
+torch
+tiktoken
+
+
+#  Stable Transformer & Embedding Libraries
+transformers
+sentence-transformers
+regex
+
+
+#  LLMs & RAG Frameworks (Stable Versions)
+google-generativeai
+ollama
+openai
+
+# LangChain ecosystem (Windows-compatible)
+langchain
+langchain-core
+langchain-community   # Windows-safe (no pwd import)
+langchain-text-splitters
+langchain-openai
+langchain-google-genai
+langchain-groq
+
+# Pydantic v1 (required for all LangChain 0.0.x)
+pydantic
+
+# Required by LangChain
+tenacity
+packaging
+langsmith
+dataclasses-json
+
+
+#  Document Processing
+docx2txt
+PyMuPDF
+pypdf
+pypandoc
+PyYAML
+
+
+#  Web & HTTP Dependencies (full bundle)
+beautifulsoup4
+requests
+urllib3
+idna
+certifi
+charset-normalizer
+aiohttp
+httpx
+httpx-sse
+lxml
+
+
+#  Backend & API
+fastapi
+python-multipart
+structlog
+uvicorn
+
+
+#  Indexing & Search
+faiss-cpu
+lancedb
+
+
+#  Development & Testing
+cfn-lint
+jsonpatch
+ipykernel
+pytest
+tqdm
+
+
+#  UI & Deployment
+openpyxl
+rouge-score
+selenium
+streamlit
+webdriver-manager
+
+setuptools 
+wheel 
+build
+python-docx
+docx2pdf
+
+jsonschema
+pyyaml
+
+
+#  Local Package (Editable Install)
+
+-e .
