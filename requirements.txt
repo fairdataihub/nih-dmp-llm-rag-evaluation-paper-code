@@ -101,6 +101,3 @@ jsonschema
 pyyaml
 
 
-#  Local Package (Editable Install)
-
--e .

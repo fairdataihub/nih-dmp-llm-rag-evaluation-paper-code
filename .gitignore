@@ -1,0 +1,170 @@
+data/vector_db/NIH_all_db/index.faiss
+data/vector_db/NIH_all_db/index.pkl
+data_ingestion1/
+
+#  Python: bytecode, venvs, packaging
+
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+
+env/
+venv/
+.venv/
+
+*.egg-info/
+*.egg
+
+dist/
+build/
+document_portal.egg-info/
+
+
+#  OS & Editors
+
+.DS_Store
+.vscode/
+.idea/
+logs/
+*.log
+.env
+.env.*
+
+
+#  Caches (HF / Transformers / general)
+.cache/
+hf_cache/
+
+# Your repo-specific caches
+data/cache/
+data/**/cache/
+notebook_DMP_RAG/data/cache/
+notebook_DMP_RAG/data/**/cache/
+
+
+# Extra safety: ignore common ML cache dirs anywhere
+**/hf_models/
+**/models/
+**/huggingface/
+**/transformers/
+**/sentence-transformers/
+**/models--sentence-transformers--*/
+
+
+
+#  HuggingFace / sentence-transformers cache (never commit)
+data/cache/
+data/cache/hf/
+data/cache/hf/models--sentence-transformers--*/
+data/cache/hf/.locks/
+data/cache/hf/xet/
+
+src/data/cache/
+src/data/cache/hf/
+src/cache/hf/models--sentence-transformers--*/
+src/data/cache/hf/.locks/
+src/cache/hf/xet/
+
+
+
+#  Data, outputs, archives (ignored by default)
+# Ignore big/generated directories
+
+data/
+data-Copy/
+outputs/
+outputs1/
+outputs7/
+outputs-llama/
+archive/
+main_archive/
+*.pdf
+
+#  src/ logs & caches
+
+src/logs/
+src/**/*.log
+src/.cache/
+src/**/.cache/
+src/cache/
+src/**/cache/
+src/hf_cache/
+src/**/hf_cache/
+src/data/vector_db/
+src/**/index.faiss
+src/**/index.pkl
+
+
+# Ignore specific generated folders/files you mentioned
+data_ingestion/
+outputs/json/
+web_links.json
+
+# --- Exceptions: keep specific tracked data/template/input files
+!data/
+!data/inputs/
+!data/inputs/dmp-template.md
+!data/inputs/nih-dms-plan-template.docx
+!data/inputs/input.json
+
+
+
+#  Ingested PDF/test artifacts (ignore)
+data/data_ingestion/**/test*
+data/data_ingestion/**/*.pdf
+data/data_ingestion1/**/test*
+data/data_ingestion1/**/*.pdf
+
+
+
+#  Vector databases / indices
+data/vector_db/
+**/index.faiss
+**/index.pkl
+**/*.lance
+**/*.parquet
+
+# Ignore specific FAISS index files
+data/vector_db/DMPtools_db/index.faiss
+data/vector_db/DMPtools_db/index.pkl
+
+data/vector_db/NIH_sharing_db/index.faiss
+data/vector_db/NIH_sharing_db/index.pkl
+
+
+# Allow ONLY the DMPtools test indices to be tracked
+!data/vector_db/
+!data/vector_db/DMPtools_db/
+!data/vector_db/DMPtools_db/index.faiss
+!data/vector_db/DMPtools_db/index.pkl
+
+
+#  Temporary / test files & generated assets
+test.py
+*.png
+*.csv
+*.cgi
+
+
+
+#  Text / Markdown / Input templates
+*.docx
+!data/inputs/nih-dms-plan-template.docx
+
+# Text: ignore all txt, but keep requirements.txt
+*.txt
+!requirements.txt
+
+# Markdown: ignore all md, but keep the DMP template
+*.md
+!data/inputs/dmp-template.md
+
+
+
+#  Office files
+*.xls
+*.xlsx
+*.xlsm
+*.doc
